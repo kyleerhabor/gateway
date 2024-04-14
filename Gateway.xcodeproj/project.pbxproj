@@ -7,23 +7,68 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0094695C2BCC20C60083A41D /* GatewayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094695B2BCC20C60083A41D /* GatewayApp.swift */; };
-		0094695E2BCC20C60083A41D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094695D2BCC20C60083A41D /* ContentView.swift */; };
 		009469602BCC20CC0083A41D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0094695F2BCC20CC0083A41D /* Assets.xcassets */; };
 		009469632BCC20CC0083A41D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 009469622BCC20CC0083A41D /* Preview Assets.xcassets */; };
+		0094696D2BCC21250083A41D /* GatewayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094696C2BCC21250083A41D /* GatewayApp.swift */; };
+		009469762BCC34E50083A41D /* GatewayXPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009469752BCC34E50083A41D /* GatewayXPC.swift */; };
+		009469782BCC34E50083A41D /* GatewayXPCProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009469772BCC34E50083A41D /* GatewayXPCProtocol.swift */; };
+		0094697A2BCC34E50083A41D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009469792BCC34E50083A41D /* main.swift */; };
+		0094697F2BCC34E50083A41D /* GatewayXPC.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = 009469732BCC34E50083A41D /* GatewayXPC.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		009469852BCC55D40083A41D /* Standard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009469842BCC55D40083A41D /* Standard.swift */; };
+		009469862BCC55D40083A41D /* Standard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009469842BCC55D40083A41D /* Standard.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0094697D2BCC34E50083A41D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 009469502BCC20C60083A41D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 009469722BCC34E50083A41D;
+			remoteInfo = GatewayXPC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		009469832BCC34E50083A41D /* Embed XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				0094697F2BCC34E50083A41D /* GatewayXPC.xpc in Embed XPC Services */,
+			);
+			name = "Embed XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		009469582BCC20C60083A41D /* Gateway.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gateway.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0094695B2BCC20C60083A41D /* GatewayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatewayApp.swift; sourceTree = "<group>"; };
-		0094695D2BCC20C60083A41D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0094695F2BCC20CC0083A41D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		009469622BCC20CC0083A41D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		009469642BCC20CC0083A41D /* Gateway.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Gateway.entitlements; sourceTree = "<group>"; };
+		0094696C2BCC21250083A41D /* GatewayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatewayApp.swift; sourceTree = "<group>"; };
+		0094696E2BCC236D0083A41D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		009469732BCC34E50083A41D /* GatewayXPC.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = GatewayXPC.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
+		009469752BCC34E50083A41D /* GatewayXPC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatewayXPC.swift; sourceTree = "<group>"; };
+		009469772BCC34E50083A41D /* GatewayXPCProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatewayXPCProtocol.swift; sourceTree = "<group>"; };
+		009469792BCC34E50083A41D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		0094697B2BCC34E50083A41D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0094697C2BCC34E50083A41D /* GatewayXPC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GatewayXPC.entitlements; sourceTree = "<group>"; };
+		009469842BCC55D40083A41D /* Standard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Standard.swift; sourceTree = "<group>"; };
+		009469882BCC5AD30083A41D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		009469892BCC5C260083A41D /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		009469552BCC20C60083A41D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		009469702BCC34E50083A41D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,7 +81,11 @@
 		0094694F2BCC20C60083A41D = {
 			isa = PBXGroup;
 			children = (
+				009469882BCC5AD30083A41D /* README.md */,
+				009469892BCC5C260083A41D /* LICENSE */,
+				009469872BCC5AB60083A41D /* Shared */,
 				0094695A2BCC20C60083A41D /* Gateway */,
+				009469742BCC34E50083A41D /* GatewayXPC */,
 				009469592BCC20C60083A41D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				009469582BCC20C60083A41D /* Gateway.app */,
+				009469732BCC34E50083A41D /* GatewayXPC.xpc */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,8 +102,8 @@
 		0094695A2BCC20C60083A41D /* Gateway */ = {
 			isa = PBXGroup;
 			children = (
-				0094695B2BCC20C60083A41D /* GatewayApp.swift */,
-				0094695D2BCC20C60083A41D /* ContentView.swift */,
+				0094696C2BCC21250083A41D /* GatewayApp.swift */,
+				0094696E2BCC236D0083A41D /* Info.plist */,
 				0094695F2BCC20CC0083A41D /* Assets.xcassets */,
 				009469642BCC20CC0083A41D /* Gateway.entitlements */,
 				009469612BCC20CC0083A41D /* Preview Content */,
@@ -69,6 +119,26 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		009469742BCC34E50083A41D /* GatewayXPC */ = {
+			isa = PBXGroup;
+			children = (
+				009469792BCC34E50083A41D /* main.swift */,
+				009469752BCC34E50083A41D /* GatewayXPC.swift */,
+				009469772BCC34E50083A41D /* GatewayXPCProtocol.swift */,
+				0094697B2BCC34E50083A41D /* Info.plist */,
+				0094697C2BCC34E50083A41D /* GatewayXPC.entitlements */,
+			);
+			path = GatewayXPC;
+			sourceTree = "<group>";
+		};
+		009469872BCC5AB60083A41D /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				009469842BCC55D40083A41D /* Standard.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,15 +149,34 @@
 				009469542BCC20C60083A41D /* Sources */,
 				009469552BCC20C60083A41D /* Frameworks */,
 				009469562BCC20C60083A41D /* Resources */,
+				009469832BCC34E50083A41D /* Embed XPC Services */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0094697E2BCC34E50083A41D /* PBXTargetDependency */,
 			);
 			name = Gateway;
 			productName = Gateway;
 			productReference = 009469582BCC20C60083A41D /* Gateway.app */;
 			productType = "com.apple.product-type.application";
+		};
+		009469722BCC34E50083A41D /* GatewayXPC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 009469802BCC34E50083A41D /* Build configuration list for PBXNativeTarget "GatewayXPC" */;
+			buildPhases = (
+				0094696F2BCC34E50083A41D /* Sources */,
+				009469702BCC34E50083A41D /* Frameworks */,
+				009469712BCC34E50083A41D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GatewayXPC;
+			productName = GatewayXPC;
+			productReference = 009469732BCC34E50083A41D /* GatewayXPC.xpc */;
+			productType = "com.apple.product-type.xpc-service";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,6 +189,10 @@
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					009469572BCC20C60083A41D = {
+						CreatedOnToolsVersion = 15.3;
+						LastSwiftMigration = 1530;
+					};
+					009469722BCC34E50083A41D = {
 						CreatedOnToolsVersion = 15.3;
 					};
 				};
@@ -118,6 +211,7 @@
 			projectRoot = "";
 			targets = (
 				009469572BCC20C60083A41D /* Gateway */,
+				009469722BCC34E50083A41D /* GatewayXPC */,
 			);
 		};
 /* End PBXProject section */
@@ -132,6 +226,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		009469712BCC34E50083A41D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -139,12 +240,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0094695E2BCC20C60083A41D /* ContentView.swift in Sources */,
-				0094695C2BCC20C60083A41D /* GatewayApp.swift in Sources */,
+				009469852BCC55D40083A41D /* Standard.swift in Sources */,
+				0094696D2BCC21250083A41D /* GatewayApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0094696F2BCC34E50083A41D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				009469782BCC34E50083A41D /* GatewayXPCProtocol.swift in Sources */,
+				009469762BCC34E50083A41D /* GatewayXPC.swift in Sources */,
+				009469862BCC55D40083A41D /* Standard.swift in Sources */,
+				0094697A2BCC34E50083A41D /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0094697E2BCC34E50083A41D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 009469722BCC34E50083A41D /* GatewayXPC */;
+			targetProxy = 0094697D2BCC34E50083A41D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		009469652BCC20CC0083A41D /* Debug */ = {
@@ -200,7 +320,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -257,7 +377,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -268,8 +388,10 @@
 		009469682BCC20CC0083A41D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Gateway/Gateway.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -279,15 +401,19 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Gateway/Info.plist;
+				INFOPLIST_KEY_LSUIElement = NO;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyleerhabor.Gateway;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -295,8 +421,10 @@
 		009469692BCC20CC0083A41D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Gateway/Gateway.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -306,14 +434,63 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Gateway/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyleerhabor.Gateway;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		009469812BCC34E50083A41D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = GatewayXPC/GatewayXPC.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UYJ357XWK6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GatewayXPC/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GatewayXPC;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kyleerhabor.GatewayXPC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		009469822BCC34E50083A41D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = GatewayXPC/GatewayXPC.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UYJ357XWK6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GatewayXPC/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GatewayXPC;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kyleerhabor.GatewayXPC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -336,6 +513,15 @@
 			buildConfigurations = (
 				009469682BCC20CC0083A41D /* Debug */,
 				009469692BCC20CC0083A41D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		009469802BCC34E50083A41D /* Build configuration list for PBXNativeTarget "GatewayXPC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				009469812BCC34E50083A41D /* Debug */,
+				009469822BCC34E50083A41D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
