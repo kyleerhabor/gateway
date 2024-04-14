@@ -14,7 +14,8 @@ yield a better experience more often than not.
 
 The formula links an executable to `/usr/local/bin/mpv` which can be called from the command line as `mpv`. This allows
 users to invoke the player with `mpv <path-to-file>`, but does not make the player available in Finder. Consequently,
-invoking mpv can be cumbersome or lead people to use [IINA][iina] instead—a video player built on mpv.
+invoking mpv can be cumbersome. [IINA][iina], in comparison, is a media player built on mpv and supports opening from
+Finder.
 
 This is the problem Gateway addresses. It accepts any file as input and invokes mpv for you.
 
